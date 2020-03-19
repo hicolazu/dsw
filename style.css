@@ -1,23 +1,161 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap');
+
+body, h1, p, a, h2, ul, li {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.superinfo-bkg {
+    background: #00420C;
+    color: white;
+} 
+
+.superinfo a{
+    color: white;
+}
+
+.superinfo {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-header {
-    background-color: aqua;
-    height: 230px;
-    text-align: center;
+.menu-bkg {
+    background: #127B25;
 }
 
-main { 
-    background-color: blueviolet;
-    height: 230px;
-    text-align: center;
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer {
-    background-color: blue;
-    height: 230px;
-    text-align: center;
+.menu a{
+    color:white;
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    color: #0d5e1c;
+}
+
+.introducao {
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.sobre {
+    border-top: 2px solid #0d5e1c;
+    border-bottom: 2px solid #0d5e1c;
+    max-width: 960px;
+    margin: 0 auto; /* alinha ao centro */
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 20px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+.campeonatos {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.campeonatos h1 {
+    font-size: 3em;
+    margin: 0 10px 30px 60px;
+}
+
+.campeonatos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.campeonatos-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.campeonatos-item h2{
+    font-size: 3em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.purple {
+    border-top: 8px solid #ae81ff;
+}
+
+.purple img {
+    width: 250px;
+    height: 250px;
+}
+
+.blue {
+    border-top: 8px solid #66d9eb;
+}
+
+.pink {
+    border-top: 8px solid #f9265e;
+}
+
+.pink img {
+    width: 300px;
+    height: 300px;
 }
