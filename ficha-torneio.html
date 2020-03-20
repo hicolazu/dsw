@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho de DSW</title>
+    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/ficha-torneio.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/swing.css">
@@ -26,8 +27,8 @@
             <ul> 
               <li> <a href="./index.html"> Início </a> </li>
               <li> <a href="./index.html#sobre"> Sobre </a> </li>
-              <li> <a href="./index.html#campeonatos"> Campeonatos </a> </li> 
-              <li> <a href="./index.html#criar-campeonato"> Criar Campeonato</a> </li>
+              <li> <a href="./ficha-torneio.html"> Criar Campeonato</a> </li>
+              <li> <a href="./campeonatos.html"> Campeonatos </a> </li> 
               <li> <a href="./ranking.html"> Ranking </a> </li>
             </ul>
           </nav>
@@ -43,11 +44,11 @@
                     <fieldset class="grupo">
                         <div class="campo">
                             <label for="nome">Nome do Criador</label>
-                            <input type="text" id="nome" name="nome" style="width: 20em" value="" />
+                            <input type="text" id="nome" name="nome" placeholder="Mané Garrincha" style="width: 20em" value="" />
                         </div>
                         <div class="campo">
-                            <label for="snome">Nome do Campeonato</label>
-                            <input type="text" id="nomeCampeonato" name="nomeCampeonato" style="width: 20em" value="" />
+                            <label for="nomeCampeonato">Nome do Campeonato</label>
+                            <input type="text" id="nomeCampeonato" name="nomeCampeonato" placeholder="Libertadores" style="width: 20em" value="" />
                         </div>
                     </fieldset>	
                     
@@ -63,24 +64,28 @@
                 
                     <div class="campo">
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email" style="width: 41em" value="" />
+                        <input type="text" id="email" name="email" placeholder="seu-email@mail.com" style="width: 41em" value="" />
                     </div>
                 
                     <div class="campo">
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" style="width: 20em"  value="" />
+                        <input type="text" id="telefone" name="telefone" placeholder="(13)99999-9999" style="width: 20em"  value="" />
                     </div>
                     
                     <fieldset class="grupo">
                         <div class="campo">
                             <label for="cidade">Cidade</label>
-                            <input type="text" id="cidade" name="cidade" style="width: 20em" value="" />
+                            <input type="text" id="cidade" name="cidade" placeholder="Praia Grande" style="width: 20em" value="" />
                         </div>
                         <div class="campo">
                             <label for="estado">Estado</label>
                             <select name="estado" id="estado">
                                 <option value="">--</option>
                                 <option value="SP">SP</option>
+                                <option value="SP">RJ</option>
+                                <option value="SP">RS</option>
+                                <option value="SP">ES</option>
+                                <option value="SP">PR</option>
                             </select>
                         </div>
                     </fieldset>
