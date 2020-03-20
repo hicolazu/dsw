@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de DSW</title>
+    <link rel="stylesheet" href="./styles/ficha-torneio.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/swing.css">
+</head>
+<body>
+    <div class='superinfo-bkg'>
+        <div class='superinfo'>
+            <a href='tel:551333465300'> +55 (13) 3346-5300</a>
+            <p> IFSP - Campus Cubatão </p>
+          <p> R. Maria Cristina, 50 - Casqueiro, Cubatão - SP</p>
+        </div>
+    </div> 
+
+    <header class='menu-bkg'>  
+        <div class='menu'> 
+          <div class='menu-logo swing'>
+            <a href='./index.html'> IFutebol </a>
+          </div>
+          <nav class='menu-nav'> 
+            <ul> 
+              <li> <a href="./index.html"> Início </a> </li>
+              <li> <a href="./index.html#sobre"> Sobre </a> </li>
+              <li> <a href="./index.html#campeonatos"> Campeonatos </a> </li> 
+              <li> <a href="./index.html#criar-campeonato"> Criar Campeonato</a> </li>
+              <li> <a href="./ranking.html"> Ranking </a> </li>
+            </ul>
+          </nav>
+        </div>
+     </header>
+
+     <h1 class='criar-campeonato'> Criar Campeonato </h1>
+
+     <section class='formulario' id="formulario">
+        <div class='formulario-container'> 
+            <form action="#/criar-campeonato" method="post">
+                <fieldset>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome do Criador</label>
+                            <input type="text" id="nome" name="nome" style="width: 20em" value="" />
+                        </div>
+                        <div class="campo">
+                            <label for="snome">Nome do Campeonato</label>
+                            <input type="text" id="nomeCampeonato" name="nomeCampeonato" style="width: 20em" value="" />
+                        </div>
+                    </fieldset>	
+                    
+                    <div class="campo">
+                        <label>Tipo</label>
+                        <label class="checkbox">
+                            <input type="radio" name="tipo" value="amador"> Amador
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="tipo" value="profissional"> Profissional
+                        </label>
+                    </div>
+                
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 41em" value="" />
+                    </div>
+                
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 20em"  value="" />
+                    </div>
+                    
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" style="width: 20em" value="" />
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="SP">SP</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                
+                    <div class="campo">
+                        <label for="jogadores">Jogadores/Times</label>
+                        <textarea rows="6" style="width: 41em" id="jogadores" name="jogadores" placeholder="Dudu/Palmeiras"></textarea>
+                    </div>
+                    
+                    <button class="botao submit" type="submit" name="submit">Criar</button>
+                    
+                </fieldset>
+                </form>
+        </div>
+     </section> 
+</body>
+</html>

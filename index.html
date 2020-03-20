@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho de DSW</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/swing.css">
 </head>
 <body>
     <div class='superinfo-bkg'>
@@ -17,14 +19,16 @@
 
     <header class='menu-bkg'>  
         <div class='menu'> 
-          <div class='menu-logo'>
-            <a href='#'> IFutebol </a>
+          <div class='menu-logo swing'>
+            <a href='./index.html'> IFutebol </a>
           </div>
           <nav class='menu-nav'> 
             <ul> 
-              <li> <a href="#"> Início </a> </li>
+              <li> <a href="./index.html"> Início </a> </li>
               <li> <a href="#sobre"> Sobre </a> </li>
               <li> <a href="#campeonatos"> Campeonatos </a> </li> 
+              <li> <a href="./ficha-torneio.html"> Criar Campeonato</a> </li>
+              <li> <a href="./ranking.html"> Ranking </a> </li>
             </ul>
           </nav>
         </div>
@@ -62,6 +66,11 @@
                <img src='./imgs/artilharia.jpg' alt='artilharia'> 
            </div>
         </div>
+      </section>
+
+      <section class='criar-campeonato' id='criar-campeonato'> 
+        <h1> Crie seu Campeonato </h1>
+        <a href="./ficha-torneio.html"> <button class='btn-criar-campeonato grow shadow'> QUERO CRIAR MEU CAMPEONATO </button> </a>
       </section>
 
 </body>

@@ -1,0 +1,53 @@
+.superinfo-bkg {
+    background: #00420C;
+    color: white;
+} 
+
+.superinfo a{
+    color: white;
+}
+
+.superinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-bkg {
+    background: #127B25;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    color:white;
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    color: #0d5e1c;
+}
